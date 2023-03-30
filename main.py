@@ -1,22 +1,15 @@
-# name = input("enteryour name: ")
-# school = input ("enter your school: ")
-# print("hi",name, "your school is", school) 
+marks = []
+for i in range(10):
+    mark = float(input("Enter the mark for student " + str(i+1) + ": "))
+    marks.append(mark)
 
-# print(type(2.88888))
+max_mark = max(marks)
+min_mark = min(marks)
+avg_mark = sum(marks) / len(marks)
 
-# length = input("Enter length: ")
-# width = input("enter width: ")
+print("Maximum mark is:", max_mark)
+print("Minimum mark is:", min_mark)
+print("Average mark is:", avg_mark)
 
-# if(length == width):
-#     print("square")
-# else:
-#     print("traingle")
 
-year = int(input("enter your age: "))
 
-age = 2023 - year
-
-if(age>18):
-    print("adult")
-else:
-    print("child")
